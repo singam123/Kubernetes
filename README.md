@@ -176,3 +176,9 @@ sudo kubeadm join masternodeip:6443 --token <Place your Token > --discovery-toke
 
 
 ## Requirements On Master node --> Open TCP port 6443 both inbound and Outbound to enable communication between cluster and worker nodes
+
+## Incase of any network related issues try loading br_netfilter module
+
+```
+sudo modprobe br_netfilter
+```
